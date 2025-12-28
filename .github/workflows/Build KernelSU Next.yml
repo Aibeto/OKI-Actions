@@ -56,7 +56,7 @@ on:
           - 'oneplus_ace_3v'
           - 'onrplus_nord_4'
           - 'oneplus_nord_ce4_lite_5g'
-        default: 'oneplus_13_b'
+        default: 'oneplus_13r_b'
         
       ANDROID_VERSION:
         description: "安卓KMI版本"
@@ -87,7 +87,7 @@ on:
        options:
           - 'On'
           - 'Off'
-       default: 'Off'
+       default: 'On'
 
       bbr:
        description: "是否启用BBR算法(对手机日用无太大意义甚至可能负优化)"
