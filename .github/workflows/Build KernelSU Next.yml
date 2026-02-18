@@ -316,9 +316,10 @@ jobs:
           # patch -p1 --fuzz=3 < scope_min_manual_hooks_v1.6.patch
           
           echo "📦 应用修复Unicode绕过补丁..."
-          patch -p1 < unicode_bypass_fix_6.1+.patch
+          # patch -p1 < unicode_bypass_fix_6.1+.patch
 
-          echo "✅ 所有补丁应用完成"
+          # echo "✅ 所有补丁应用完成"
+          echo "跳过Unicode绕过补丁"
 
       - name: "⚙️ Apply SCHED Patch | 应用风驰补丁"
         if: ${{ github.event.inputs.KERNEL_VERSION == '6.6' }}
